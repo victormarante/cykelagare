@@ -2,6 +2,93 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<MudContainer Class="container mx-auto px-4 py-8">
+    <MudGrid>
+        @* Header content for the main Page, this will include the icon, name and some sub-titles *@
+        <MudItem xs="12" Class="d-flex justify-center">
+            <MudPaper Elevation="0">
+                <MudGrid>
+                    <MudItem>
+                        <MudIcon Size="Size.Large" Icon="@Icons.Custom.Uncategorized.ChessKing" Color="Color.Info"></MudIcon>
+                    </MudItem>
 
-Welcome to your new app.
+                    <MudItem>
+                        <MudDivider Vertical="true" FlexItem="true"/>
+                    </MudItem>
+
+                    <MudItem xs="8">
+                        <MudText Typo="Typo.h3" Align="Align.Center">Cykelägare</MudText>
+                        <MudText Typo="Typo.subtitle2" Align="Align.Center" GutterBottom="true">Säker cykelregistrering</MudText>
+                    </MudItem>
+
+                    <MudItem xs="12">
+                        <MudText Class="text-xl text-muted-foreground max-w-2xl" Align="Align.Center">Säker cykelregistrering och verifieringsplattform</MudText>
+                    </MudItem>
+                </MudGrid>
+            </MudPaper>
+        </MudItem>
+
+        @* Main content of the page, information only, no user interactions*@
+        <MudItem xs="12">
+            <MudPaper Class="d-flex align-center justify-center mud-width-full py-8" Elevation="1">
+                <MudGrid>
+
+                    @* First part of the content box will be text mostly*@
+                    <MudItem xs="12">
+                        <MudText GutterBottom="true" Typo="Typo.h6" Align="Align.Center">
+                            Varför använda Cykelägare.se?
+                        </MudText>
+                        <MudText Typo="Typo.subtitle1" Align="Align.Center">
+                            Sveriges mest avancerade cykelregistrering. Gratis, säkert och effektivt.
+                        </MudText>
+                    </MudItem>
+
+                    @* Next part of the content box will be 4 different icons + text combinations, spaced out with 2 on each row *@
+                    <MudItem xs="12">
+                        <MudGrid>
+                            <MudItem xs="3" Class="d-flex flex-column justify-center align-center">
+                                <MudIcon Size="Size.Medium" Icon="@Icons.Material.Outlined.Shield" />
+                                <MudText GutterBottom="true" Align="Align.Center" Typo="Typo.h6">
+                                    BankID-registrering
+                                </MudText>
+                                <MudText Typo="Typo.caption" Align="Align.Center">
+                                    Säker kontoregistrering med BankID
+                                </MudText>
+                            </MudItem>
+
+                            <MudItem xs="3" Class="d-flex flex-column justify-center align-center">
+                                <MudIcon Size="Size.Medium" Icon="@Icons.Material.Filled.Percent"/>
+                                <MudText GutterBottom="true" Typo="Typo.h6" Align="Align.Center">
+                                    Gratis konto
+                                </MudText>
+                                <MudText Typo="Typo.caption" Align="Align.Center">
+                                    Låg engångskostnad för cykelregistrering
+                                </MudText>
+                            </MudItem>
+
+                            <MudItem xs="3" Class="d-flex flex-column justify-center align-center">
+                                <MudIcon Size="Size.Medium" Icon="@Icons.Material.Filled.Search"/>
+                                <MudText GutterBottom="true" Typo="Typo.h6" Align="Align.Center">
+                                    Större återfyndschans
+                                </MudText>
+                                <MudText Typo="Typo.caption" Align="Align.Center">
+                                    Direktkontakt mellan hittare och ägare
+                                </MudText>
+                            </MudItem>
+
+                            <MudItem xs="3" Class="d-flex flex-column justify-center align-center">
+                                <MudIcon Size="Size.Medium" Icon="@Icons.Material.Filled.Storefront" />
+                                <MudText GutterBottom="true" Typo="Typo.h6" Align="Align.Center">
+                                    Strategiska partnerskap
+                                </MudText>
+                                <MudText Typo="Typo.caption" Align="Align.Center">
+                                    Samarbete med butiker och myndigheter
+                                </MudText>
+                            </MudItem>
+                        </MudGrid>
+                    </MudItem>
+                </MudGrid>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
